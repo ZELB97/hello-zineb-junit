@@ -2,8 +2,9 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven'
-    }
+    maven 'Maven'
+    jdk 'JDK21'
+}
 
     stages {
         stage('Verification Java') {
